@@ -1,0 +1,35 @@
+.copyColor {
+    position: absolute;
+    opacity: 0;
+    height: 100vh;
+    width: 100%;
+    transform: scale(0.00000001);
+    z-index: 1;
+}
+
+.copyColor.show {
+    opacity: 1;
+    transform: scale(150);
+    transition: opacity 0.2s ease-in;
+}
+
+.copyColorText {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.0001);
+    opacity: 0;
+}
+
+.copyColorText.show {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 10;
+    transition-delay: 0.4s;
+}
